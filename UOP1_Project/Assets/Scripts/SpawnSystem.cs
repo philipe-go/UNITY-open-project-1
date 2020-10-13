@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Linq;
-using UnityEditor.PackageManager;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class SpawnSystem : MonoBehaviour
 {
@@ -18,15 +16,15 @@ public class SpawnSystem : MonoBehaviour
 
 	void Awake()
 	{
-        try
-        {
-            Spawn(_defaultSpawnIndex);
-        }
-        catch (Exception e)
-        {
-            Debug.LogError($"[SpawnSystem] Failed to spawn player. {e.Message}");
-        }
-    }
+		try
+		{
+			Spawn(_defaultSpawnIndex);
+		}
+		catch (Exception e)
+		{
+			Debug.LogError($"[SpawnSystem] Failed to spawn player. {e.Message}");
+		}
+	}
 
 	void Reset()
 	{
@@ -36,7 +34,7 @@ public class SpawnSystem : MonoBehaviour
 	[ContextMenu("Attempt Auto Fill")]
 	private void AutoFill()
 	{
-		if(_cameraManager == null)
+		if (_cameraManager == null)
 			_cameraManager = FindObjectOfType<CameraManager>();
 
 		if (_spawnLocations == null || _spawnLocations.Length == 0)

@@ -1,14 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Cinemachine;
-using System;
 
 public class CameraManager : MonoBehaviour
 {
 	public InputReader inputReader;
 	public Camera mainCamera;
-    public CinemachineFreeLook freeLookVCam;
+	public CinemachineFreeLook freeLookVCam;
 
 	public void SetupProtagonistVirtualCamera(Transform target)
 	{
