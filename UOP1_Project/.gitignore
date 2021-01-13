@@ -79,4 +79,10 @@ ProjectSettings/Packages/com.unity.polybrush/Settings.json
 /ProjectSettings/Packages/com.unity.progrids/Settings.json
 Assets/Polybrush Data*
 Assets/PolybrushData*
+<<<<<<< HEAD
 >>>>>>> fb3d2fbcaaad050d8443f67ffa27bb787517c77a
+=======
+
+# Asset Bundles folder
+/StreamingAssets/
+>>>>>>> upstream/main
